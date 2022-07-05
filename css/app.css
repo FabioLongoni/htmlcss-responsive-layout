@@ -186,7 +186,70 @@ header ul {
     background-color: #9792e4;
 }
 
-   
+/* terza sezione */
+
+.testimonials {
+    padding: 4rem 0;
+}
+
+.container h2 {
+    font-size: 2.2rem;
+    color: #948ee3;
+}
+
+.container h4 {
+    font-weight: 400;
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.testimonials-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.row-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.col-3 {
+    background-color: #9792e4;
+    border-radius: 3rem;
+}
+
+.address address {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.card-3 {
+    display: flex;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    color: white;
+}
+
+.card-3 img {
+    width: calc(100% / 5);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+
+
+
+
 
 
 
@@ -232,5 +295,12 @@ header ul {
     }
     .row-2 {
         flex-direction: column;
+    }
+    .card-3 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-3 img {
+        width: 100%;
     }
 }
