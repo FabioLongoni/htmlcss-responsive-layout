@@ -301,8 +301,31 @@ header ul {
     font-size: 1rem;
 }
 
+/* quinta sezione */
+.row-5 {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
 
+.button-small {
+    background-color: #9792e4;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    border: none;
+}
 
+.col-5 img {
+    width: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.col-5-left {
+    width: 75%;
+}
 
 
 
