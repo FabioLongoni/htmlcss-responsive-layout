@@ -59,28 +59,46 @@ header ul {
 .row {
     display: flex;
     gap: 1.5rem;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .col-1 {
-    border: 1px solid black;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 0 1rem;
+    border-radius: 1rem;
+    background-color: #b5ddff;
+    flex-basis: calc(calc(100% - 3rem)/3);
+}
+.large {
+    flex-grow: 1;
+    flex-basis: calc(calc(100% / 3 * 2) - 1.5rem);
 }
 
 .col-1 h3 {
     margin-bottom: 1.5rem;
+    color: #007efd;
+    font-weight: bold;
 }
 
 .wrapper-app button {
     background-color: #0084fd;
     color: white;
+    padding: 0 3rem;
+    font-weight: bold;
 }
 
 .first-card img {
-    width: 50%;
+    width: 40%;
+    align-self: flex-end;
 }
 
 .first-card {
     display: flex;
+    height: 100%;
+}
+
+.first-card-left {
+    flex-basis: 55%;
 }
 
 .card-general {
@@ -89,8 +107,16 @@ header ul {
 
 .card-general i {
     font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: #007efd;
 }
 
+.col-1 p {
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+    color: #596d7e;
+    font-weight: bold;
+}
 
 
 
@@ -105,6 +131,12 @@ header ul {
         display: block;
         transform: scale(1.5);
     }
+    .first-card {
+        flex-direction: column;
+    }
+    .first-card img {
+        align-self: flex-start;
+    }
 
 }
 
@@ -117,5 +149,12 @@ header ul {
         display: block;
         transform: scale(1.5);
     }
-
+    .row {
+        flex-direction: column;
+    }
+    .first-card img {
+        align-self: center;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
 }
