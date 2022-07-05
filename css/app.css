@@ -246,6 +246,63 @@ header ul {
     border-radius: 50%;
 } 
 
+/* quarta sezione */
+
+.benefit {
+    background-color: #9792e4;
+    padding-bottom: 3rem;
+}
+
+.benefit h2 {
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.row-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.col-4 {
+    padding: 1.5rem;
+    background-color: white;
+    flex-basis: calc(calc(100% - 6rem) / 3);
+    border-radius: 1.5rem;
+    color: #888888;
+}
+
+.col-4 button {
+    padding: 0 3rem;
+    background-color: #9792e4;
+    color: white;
+}
+
+.col-4 span {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #9792e4;
+    display: block;
+    padding: 1.5rem 0;
+    
+}
+
+.col-4 h4 {
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+    font-weight: 900;
+    color: #9792e4;
+}
+
+.col-4 p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+
+
 
 
 
@@ -272,6 +329,9 @@ header ul {
     }
     .row-2 {
         flex-direction: column;
+    }
+    .col-4 {
+        flex-basis: calc(calc(100% - 1.5rem)/2);
     }
 
 }
@@ -303,4 +363,8 @@ header ul {
     .card-3 img {
         width: 100%;
     }
+    .col-4 {
+        flex-basis: 100%;
+    }
+
 }
