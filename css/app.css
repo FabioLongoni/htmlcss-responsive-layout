@@ -44,6 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 0;
+    gap: 2rem;
 }
 
 header ul {
@@ -69,11 +70,12 @@ header ul {
     padding: 1.5rem 1rem 0 1rem;
     border-radius: 1rem;
     background-color: #b5ddff;
-    flex-basis: calc(calc(100% - 3rem)/3);
+    flex-basis: 30%;
+    flex-grow: 1;
 }
 .large {
-    flex-grow: 1;
-    flex-basis: calc(calc(100% / 3 * 2) - 1.5rem);
+    flex-grow: 2;
+    flex-basis: calc(60% + 1.5rem);
 }
 
 .col-1 h3 {
@@ -90,8 +92,9 @@ header ul {
 }
 
 .first-card img {
-    width: 40%;
+    width: 35%;
     align-self: flex-end;
+    margin: 0 auto;
 }
 
 .first-card {
@@ -186,6 +189,11 @@ header ul {
     border-radius: 50%;
     padding: 1.5rem 1.7rem;
     background-color: #9792e4;
+    color: black;
+}
+
+.italic {
+    font-style: italic;
 }
 
 /* terza sezione */
@@ -235,14 +243,14 @@ header ul {
 
 .card-3 {
     display: flex;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
     gap: 1.5rem;
     align-items: center;
     color: white;
 }
 
 .card-3 img {
-    width: calc(100% / 5);
+    width: calc(100% / 4);
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
@@ -271,7 +279,8 @@ header ul {
 .col-4 {
     padding: 1.5rem;
     background-color: white;
-    flex-basis: calc(calc(100% - 3rem) / 3);
+    flex-basis: 30%;
+    flex-grow: 1;
     border-radius: 1.5rem;
     color: #888888;
 }
@@ -436,7 +445,7 @@ footer {
 
 
 /* displaytablet */
-@media all and (max-width:811px)  {
+@media all and (max-width:769px)  {
     .list-item-nav-bar {
         display: none;
     }
@@ -449,18 +458,21 @@ footer {
     }
     .first-card img {
         align-self: flex-start;
+        width: 42%;
+        margin: 0;
     }
     .row-2 {
         flex-direction: column;
     }
     .col-4 {
-        flex-basis: calc(calc(100% - 1.5rem)/2);
+        flex-basis: 40%;
+        flex-grow: 1;
     }
 
 }
 
 /* displaysmartphone */
-@media all and (max-width:376px)  {
+@media all and (max-width:415px)  {
     .list-item-nav-bar {
         display: none;
     }
@@ -471,6 +483,11 @@ footer {
     .row {
         flex-direction: column;
     }
+
+    .col-1 {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
     .first-card img {
         align-self: center;
         width: 100%;
